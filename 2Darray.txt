@@ -1,0 +1,49 @@
+                                                                           2D Array
+                                                                      *****************
+
+                                      In C++, a 2D array is an array of arrays, where each element is itself an array.
+                                                   It can be visualized as a grid with rows and columns.
+
+                                      Here's a full example of how to declare, initialize, and use a 2D array in C++:
+
+                                                                    Source Code of 2D Array 
+                                                                ``````````````````````````````
+                                                                      #include <iostream>
+                                                                        int main()
+                                                                       {
+                                                    // Declare a 2D array with fixed size (3 rows and 4 columns)
+                                                                 
+                                                                    const int rows = 3;
+                                                                   const int columns = 4;
+                                                               int twoDArray[rows][columns];
+
+                                                        // Initialize the 2D array with some values
+                                                        
+                                                            for (int i = 0; i < rows; i++)
+                                                                      {
+                                                           for (int j = 0; j < columns; j++) 
+                                                                         {
+                                           twoDArray[i][j] = i * columns + j; // Filling the array with some values
+                                                                            }
+                                                                       }
+
+                                                        // Display the contents of the 2D array
+
+                                                      std::cout << "2D Array Contents:" << std::endl;
+                                                            for (int i = 0; i < rows; i++)
+                                                                         {
+                                                               for (int j = 0; j < columns; j++)
+                                                                    {
+                                                             std::cout << twoDArray[i][j] << "\t";
+                                                                           }
+                                                                  std::cout << std::endl;
+                                                                               }
+                                                                        return 0;
+                                                                         }
+
+                                                                        Output :
+                                                                     `````````````
+                                                                  2D Array Contents:
+                                                              0       1       2       3
+                                                              4       5       6       7
+                                                              8       9       10      11

@@ -1,0 +1,42 @@
+
+
+
+                                                                           Function
+                                                                       **************
+
+                                                 It is nothing but block of code which takes input,processed it and produce
+                                    output in the form of result.Function run only when it call.They allow us to reuse code and reduce repetion.
+
+                                                                           Syntax : 
+                                                                        ~~~~~~~~~~~~~
+
+                                                        ->  returnType functionName (Parameters);
+
+                                                     Elements of function :
+                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                  
+                                                      *  Function Declartion
+                                                      *  Function Call
+                                                      *  Function Declaration
+
+                                                             Types
+                                                          ~~~~~~~~~~~
+
+                                                      *  User-define -> It allow the programmer to define their own function.
+                                                                         Ex - add();sum();count(); 
+               
+                                                      *  Pre-define - It is build into the software and does not need to be 
+                                                                         created  by a programmer.
+                                                                         Ex - strcmp(); strlen(); strcpy();
+
+                                                          
+                                                       Types of function in C++   
+                                                  `````````````````````````````````
+
+                                                      * Function with no argument and no return value 
+                                                                      
+                                                      *  Function with no argument but return value
+                     
+                                                      *  Function with argument but no return value
+
+                                                      *  Function with argument and return value

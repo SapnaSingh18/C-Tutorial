@@ -1,0 +1,56 @@
+                                                                      Function Templates :
+                                                                 ****************************
+
+                                      We can define a template for a function. For example, if we have an add() function,
+                                 we can create versions of the add function for adding the int, float or double type values.
+
+                                                                          For example
+                                                                       ~~~~~~~~~~~~~~~~~~
+
+                                                  Quick sorting algorithm is implemented using a generic function, 
+                                                 it can be implemented to an array of integers or array of floats.
+
+                                                                            Syntax 
+                                                                          ``````````
+                                                    template < class Ttype> ret_type func_name(parameter_list)  
+                                                                    {  
+                                                                  // body of function.  
+                                                                         }  
+
+                                           Where Ttype :
+                                                       It is a placeholder name for a data type used by the function.
+                                     It is used within the function definition. It is only a placeholder that the compiler
+                                          will automatically replace this placeholder with the actual data type.
+
+                                                                      
+                                                                           class :
+                                                                         ``````````
+                                           A class keyword is used to specify a generic type in a template declaration.
+
+                                                    Let's see a simple example of a function template:
+
+                                                                           Code:
+                                                                         `````````
+                                                                  #include <iostream>  
+                                                                  using namespace std;  
+                                                          template<class T> T add(T &a,T &b)  
+                                                                        {  
+                                                                     T result = a+b;  
+                                                                     return result;  
+                                                                           }  
+                                                                     int main()  
+                                                                        {  
+                                                                      int i =2;  
+                                                                      int j =3;  
+                                                                   float m = 2.3;  
+                                                                   float n = 1.2;  
+                                                      cout<<"Addition of i and j is :"<<add(i,j);  
+                                                                    cout<<'\n';  
+                                                      cout<<"Addition of m and n is :"<<add(m,n);  
+                                                                    return 0;  
+                                                                          } 
+ 
+                                                                        Output :
+                                                                     `````````````
+                                                            Addition of i and j is :5
+                                                           Addition of m and n is :3.5

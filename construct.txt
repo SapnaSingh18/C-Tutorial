@@ -1,0 +1,80 @@
+                                                                          Constructor
+                                                                       *****************
+
+                              Constructor in C++ is a special method that is invoked automatically at the time of object creation.
+                         It is used to initialize the data members of new objects generally. The constructor in C++ has the same name as
+                  the class or structure.It constructs the values i.e. provides data for the object which is why it is known as constructors.
+
+                                                           Syntax :
+                                                                                  <class-name> (list-of-parameters);
+
+                                 Constructor can be defined inside the class declaration or outside the class declaration
+                               ...........................................................................................
+
+                                                  a.    Syntax for defining the constructor within the class
+
+                                                             <class-name>(list-of-parameters)
+                                                                         {
+                                                                 //constructor definition
+                                                                        }
+                     
+                                                 b.    Syntax for defining the constructor outside the class
+
+                                                       <class-name>: :<class-name>(list-of-parameters)
+                                                                         {
+                                                                   //constructor definition
+                                                                             
+
+
+                                                                                  Types of Constructors
+                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                Default constructor                                 Parameterized Constructors                                 Copy Constructor
+             ````````````````````````                           `````````````````````````````````                            ````````````````````
+        Default constructor is the constructor              To create a parameterized constructor,                 A copy constructor is a member function
+            which doesn’t take any argument.                  simply add parameters to it the way                  that initializes an object using another object 
+      It has no parameters. It is also called                    you would to any other function                          of the same class.
+           a zero-argument constructor.
+
+
+                                                                         Destructor
+                                                                    ******************
+
+                               A destructor is also a special member function as a constructor. Destructor destroys the class objects
+                          created by the constructor. Destructor has the same name as their class name preceded by a tilde (~) symbol. It is not
+                       possible to define more than one destructor. The destructor is only one way to destroy the object created by the constructor.
+                    Hence destructor can-not be overloaded. Destructor neither requires any argument nor returns any value. It is automatically called
+                   when the object goes out of scope.  Destructors release memory space occupied by the objects created by the constructor. In destructor,
+                                                  objects are destroyed in the reverse of object creation.
+
+                                                   
+                                                The syntax for defining the destructor within the class
+                                              ...........................................................
+
+                                                                   ~ <class-name>()
+                                                                         {
+                                                                             }
+
+
+                                                 The syntax for defining the destructor outside the class
+                                              ...........................................................
+
+                                                       <class-name>: : ~ <class-name>()
+                                                                          {
+                                                                              }
+
+                                                        Difference between Constructor and Distructor
+                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                                Constructor                                                                             Distructor
+                            ``````````````````                                                                      ````````````````
+        . Constructor helps to initialize the object of a class.	                          Whereas destructor is used to destroy the instances.
+
+        . It is declared as className( arguments if any ){Constructor’s Body }.	          Whereas it is declared as ~ className( no arguments ){ }.
+
+	. Constructor can either accept arguments or not.                                 	  While it can’t have any arguments.
+
+	. A constructor is called when an instance or object of a class is created.	          It is called while object of the class is freed or deleted.
+
+	. Constructor is used to allocate the memory to an instance or object.	                  While it is used to deallocate the memory of an object of a class.
+

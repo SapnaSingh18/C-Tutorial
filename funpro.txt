@@ -1,0 +1,81 @@
+ 
+
+                                    * No argument but return value                              * No argument and no return value 
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+                                        #include<iostream.h>                                          #include<iostream.h>                                    
+                                        using namespace std;                                           using namespace std;                                                                                                                     
+                                          void prime();                                                  int prime();
+                                            int main()                                                    int main()
+                                               {                                                               {
+                                            prime();                                                        prime();
+                                                }                                                      int num,i,flag=0;
+                                         int num,i,flag=0;                                                num=prime();      
+                                      cout<<"Enter number";                                          for(i=2;i<=num/2;i++)
+                                          cin>>num;                                                             {
+                                      for(i=2;i<=num/2;i++)                                            if(num % i == 0)
+                                               {                                                              {
+                                       if(num % i == 0)                                                      flag = 1;   
+                                                {                                                           {
+                                          flag = 1;                                                          break;                         
+                                             break;                                                             }
+                                               }                                                              }
+                                                }                                                      if(flag == 1)
+                                        if(flag == 1)                                                      {                          
+                                              {                                                   cout<<num<<"is not prime";                 
+                                    cout<<num<<"is not prime";                                                 }        
+                                                }                                                            else
+                                             else                                                          {
+                                               {                                                     cout<<num<<"is a prime 
+                                   cout<<num<<"is a prime ";                                                }
+                                                 }                                                         return 0;                                                                            
+                                                                                                               }                                                           
+                                                                                                        int prime()                                                        
+                                                                                                            {                                                       
+                                                                                                          int n;                                                       
+                                                                                                     cout<<"Enter number";                                                        
+                                                                                                          cin>>n;                                                  
+                                                                                                             }                                            
+                                                                                               
+                                                                                              
+                                                                                            
+                                                                                         
+                                                                                               
+
+                                    * Argument but no return value                  * Argument and return value 
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                       #include<iostream.h>                         #include<iostream.h>                                #include<iostream.h>
+                       using namespace std;                         using namespace std;                               using namespace std;
+                        void prime();                                 int prime(int n);                                    void prime(int n);                              
+                         int main()                                     int main()                                           int main()
+                             {                                             {                                                     {
+                          prime();                                     int num,flag=0;                                      int num;
+                              }                                      cout<<"Enter number";                              cout<<"Enter number";
+                       int num,i,flag=0;                                 cin>>num;                                           cin>>num;
+                     cout<<"Enter number";                           flag=prime(num);                                       prime(num);
+                        cin>>num;                                      if(flag == 1)                                         return 0;
+                     for(i=2;i<=num/2;i++)                                  {                                                     }
+                             {                                     cout<<num<<"is not prime";                            void prime(int n)                  
+                      if(num % i == 0)                                      }                                                  {
+                           {                                                 else                                          int i,flag=0;
+                         flag = 1;                                        {                                             for(i=2;i<=num/2;i++)                 
+                           break;                                   cout<<num<<"is a prime ";                                   {
+                             }                                                }                                           if(num % i == 0)
+                           }                                              return 0;                                            {
+                        if(flag == 1)                                         }                                              flag = 1;                       
+                             {                                         int prime(int n)                                      break;                      
+                   cout<<num<<"is not prime";                               {                                                   }                     
+                             }                                             int i;                                                  }
+                           else                                      for(i=2;i<=num/2;i++)                                 if(flag == 1)
+                            {                                                 {                                                 {
+                  cout<<num<<"is a prime ";                           if(n % i == 0)                                  cout<<num<<"is not prime";
+                            }                                            return 1;                                                }
+                                                                           }                                                   else
+                                                                         return 0;                                              {
+                                                                            }                                         cout<<num<<"is a prime ";
+                                                                                                                                  }
+                                                                                                                                    }
+
+
+

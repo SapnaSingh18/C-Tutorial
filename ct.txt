@@ -1,0 +1,51 @@
+                                                                         Class Template
+                                                                     *********************
+
+                                            Class Template can also be defined similarly to the Function Template.
+                                       When a class uses the concept of Template, then the class is known as generic class.
+
+                                                                           Syntax
+                                                                        `````````````
+                                                                   template<class Ttype>  
+                                                                    class class_name  
+                                                                            {  
+                                                                          ......  
+                                                                             ..........  
+                                                                            }  
+                                 
+                                      Ttype is a placeholder name which will be determined when the class is instantiated.
+                                         We can define more than one generic data type using a comma-separated list.
+                                                     The Ttype can be used inside the class body.
+
+
+                        Example of class template :
+                     ````````````````````````````````
+                                                                #include <iostream>  
+                                                                using namespace std;  
+                                                           template<class T1, class T2>  
+                                                                      class A   
+                                                                         {  
+                                                                       T1 a;  
+                                                                       T2 b;  
+                                                                      public:  
+                                                                   A(T1 x,T2 y)  
+                                                                     {  
+                                                                       a = x;  
+                                                                       b = y;  
+                                                                         }  
+                                                                  void display()  
+                                                                     {  
+                                                cout << "Values of a and b are : " << a<<" ,"<<b<<endl;  
+                                                                           }                     
+                                                                     };  
+  
+                                                                    int main()  
+                                                                        {  
+                                                             A<int,float> d(5,6.5);  
+                                                                  d.display();  
+                                                                     return 0;  
+                                                                       } 
+ 
+                                            Output :
+                                         ````````````
+                                                    Values of a and b are : 5,6.5

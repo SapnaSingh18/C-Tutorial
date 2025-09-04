@@ -1,0 +1,83 @@
+                                                                       Pointer
+                                                                 *******************
+
+                               The pointer in C++ language is a variable, it is also known as locator or indicator that points
+                       to an address of a value. The symbol of an address is represented by a pointer. In addition to creating and 
+                                  modifying dynamic data structures, they allow programs to emulate call-by-reference.
+
+
+                                                                       Syntax:-
+                                                                            datatype *var_name;   
+                                                                            int *ptr;   // ptr can point to an address which holds int data 
+
+                                                                 Types of pointer:-
+                                                              ````````````````````````
+                                                                  (1) Void Pointer
+       
+                                                                  (2) Wild Pointer
+                
+                                                                  (3) Null Pointer
+              
+                                                                  (4) Dangling Pointer
+                      
+                                                                  (5) Pointer to Pointer
+                      
+                                                                  (6) Function Pointer
+
+
+                                              Features of Pointers:-
+                                           ```````````````````````````
+                                                       -> Pointer saves the memory space.
+
+                                                       -> The execution time of a pointer is faster because it directly accesses to memory location.
+
+                                                       -> The memory is accessed efficiently with the help of a pointer.
+
+                                                       -> Memory is allocated and deallocated dynamically.
+
+                                                       -> Pointers are used with data structures.
+                   
+
+                                             How to use a pointer?
+                                         ```````````````````````````
+                                                       -> Establish a pointer variable
+.
+                                                       -> Employing the unary operator (&), which yields the address of the variable,
+                                                          to assign a pointer to a variable's address.
+
+                                                       -> Using the unary operator (*), which gives the variable's value at the address
+                                                          provided by its argument, one can access the value stored in an address.
+
+  
+               
+                Symbol                           	                   Name	                                                    Description
+             ````````````                                               ``````````                                               `````````````````
+             & (ampersand sign)	                                      Address operator	                                    Determine the address of a variable.
+
+           ∗ (asterisk sign)	                                   Indirection operator	                                       Access the value of an address. 
+ 
+
+                                           Let's see the simple example of using pointers printing the address and value.
+                                      ```````````````````````````````````````````````````````````````````````````````````````
+                                                           Code:
+                                                         ```````` 
+                                                                  #include <iostream>  
+                                                                  using namespace std;  
+                                                                   int main()  
+                                                                     {  
+                                                                    int number=30;    
+                                                                    int ∗   p;      
+                                                                    p=&number;//stores the address of number variable    
+                                                             cout<<"Address of number variable is:"<<&number<<endl;    
+                                                             cout<<"Address of p variable is:"<<p<<endl;    
+                                                             cout<<"Value of p variable is:"<<*p<<endl;    
+                                                                     return 0;  
+                                                                       }  
+
+
+                                                                         Output:
+                                                                       ```````````
+                                                      Address of number variable is:0*61fe14
+                                                         Address of p variable is:0*61fe14
+                                                            Value of p variable is:30  
+ 

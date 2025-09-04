@@ -1,0 +1,61 @@
+                                                                
+                                      
+                                                                Let's know about c++
+                                                            *****************************
+
+                                   C++ is an object oriented programming language . It is an extension of c programming .
+
+                                 It allow you to define class and object to model real world entities and their behaviour .
+        
+
+                         It follows OOPs concept (Object Oriented Programming Structure). Everythings in c++ is associated 
+                                          with class and object , along with its attributes and methods .
+
+
+
+                                                                    HISTORY OF C++
+                                                              ***********************
+
+             C++ programming language was developed in 1980 by Bjarne Stroustrup at bell laboratories of AT&T (American Telephone & Telegraph), located in U.S.A.
+
+
+
+                                                                 FEATURES OF C++
+                                                          ***************************
+
+                                                         . Object-Oriented Programming
+                                                         . Machine Independent
+                                                         . Simple
+                                                         . High-Level Language
+                                                         . Popular
+                                                         . Case-sensitive
+                                                         . Compiler Based
+                                                         . Dynamic Memory Allocation
+                                                         . Memory Management
+                                                         . Multi-threading
+
+
+
+ 
+            ADVANTAGES                                                                    DISADVANTAGES
+       *******************                                                             *******************
+
+        -> Protability                                                                  ->  Pointer                                           
+
+        -> Mid-level programming language                                               -> No garbage collection
+          
+        -> Object-oriented                                                              -> Unsafe
+     
+        -> Multi-prradigm programming language                                          ->  Complex
+
+        -> Memory management                                                            ->  Less flexible
+
+        -> Fast and powerful                                                            -> No custom operator
+
+        -> Simliar to other language                                                    ->  No build in thread
+
+        -> Standard library                                                             -> Lack of algebric data types
+
+        -> Wide range of application                                                    ->  Function are not first-class type
+
+        

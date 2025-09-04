@@ -1,0 +1,40 @@
+                                                                          1D Array
+                                                                      ***************
+                                       In C++,
+                                             a one-dimensional array is a collection of elements of the same data type arranged 
+                                        in a linear sequence. Each element in the array can be accessed using its index (position).
+
+                               The index starts from 0 for the first element and goes up to the array size minus one for the last element.
+
+                                 Here's a full example of declaring, initializing, and accessing elements in a one-dimensional array :
+
+                                                                     Source Code of 1D Array 
+                                                                   `````````````````````````````
+                                                                        #include <iostream>
+                                                                           int main()
+                                                                              {
+                                                      // Declare an array of integers with a fixed size of 5
+                                                                        int numbers[5];
+
+                                                          // Initialize the elements of the array
+                                                                        numbers[0] = 10;
+                                                                        numbers[1] = 20;
+                                                                        numbers[2] = 30;
+                                                                        numbers[3] = 40;
+                                                                        numbers[4] = 50;
+
+                                                         // Access and print the elements of the array
+                                                                std::cout << "Array elements: ";
+                                                                    for (int i = 0; i < 5; ++i)
+                                                                       {
+                                                                  std::cout << numbers[i] << " ";
+                                                                                }
+                                                                  std::cout << std::endl;
+
+                                                                          return 0;
+                                                                                  }
+
+                                                                          Output: 
+                                                                      ```````````````
+                                                              Array elements: 10 20 30 40 50
+

@@ -1,0 +1,48 @@
+                                                                          Array
+                                                                     **************
+
+                                  An array is a collection of elements of the same data type, stored in contiguous memory locations.
+
+                                      It provides a way to store multiple values of the same type under a single name.
+
+                             The elements in an array can be accessed using an index, which represents their position in the array.
+
+                      Arrays in C++ are zero-indexed, meaning the first element is at index 0, the second element is at index 1, and so on.
+
+               
+                                                                         syntax
+                                                                      .............
+                                                             dataType arrayName[arraySize];
+                                          Here:
+                                                DataType: The data type of the elements that the array will store.
+
+                                                ArrayName: The identifier or name of the array.
+
+                                                ArraySize: The number of elements the array can hold. This must be a constant expression 
+                                                           (e.g., a literal value or a constant variable).
+
+                                          Example
+                                        ...........
+                                                                  #include <iostream>
+
+                                                                   int main() 
+                                                                      {
+                                                              int myArray[5]; // Declare an integer array of size 5
+
+                                                                  // Initializing the array elements
+                                                                     myArray[0] = 10;
+                                                                     myArray[1] = 20;
+                                                                     myArray[2] = 30;
+                                                                     myArray[3] = 40;
+                                                                     myArray[4] = 50;
+
+                                                                 // Accessing and printing the elements of the array
+                                                      std::cout << "Element at index 0: " << myArray[0] << std::endl;
+                                                      std::cout << "Element at index 2: " << myArray[2] << std::endl;
+
+                                                                        return 0;
+                                                                             }
+                                             Output
+                                          ...........
+                                                     Element at index 0:10
+                                                     Element at index 2:30
