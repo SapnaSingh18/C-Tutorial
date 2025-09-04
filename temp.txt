@@ -1,0 +1,35 @@
+                                                                        C++ Templates
+                                                                     *******************
+
+                                         The templates are one of the most powerful and widely used methods added to C++,
+                                     which allows us to write generic programs. Templates in C++ allow us to define generic 
+                                 functions and classes. Templates in C++ promote generic programming, meaning the programmer does 
+                                           not need to write the same function or method for different parameters.
+
+                                   The idea behind the templates in C++ is very simple. We pass the data type as a parameter,
+                                              so we don’t need to write the same code for different data types.
+
+
+                                              Some of the most common examples of templates in C++ can be :
+                                           ``````````````````````````````````````````````````````````````````
+                                   Library containers like iterators. We can define iterators of different data types by passing
+                                                      the data type as a parameter to the iterator.
+
+                         Sorting algorithms defined for STL in C++. We can have the data sorted in an order irrespective of the data type.
+
+                                                                Examples of templates in C++ :
+                                                            ``````````````````````````````````````
+                                                                    ->vector <int> vec;
+
+                                                                    ->vector <char> vec;
+                                                                    
+                                                                    ->stack <string> s;
+
+                                                                    ->queue <int> q; etc.
+
+                                                       Templates can be represented in two ways:
+                                                   ````````````````````````````````````````````````
+                                                                    ->Function templates
+
+                                                                    ->Class templates
+
